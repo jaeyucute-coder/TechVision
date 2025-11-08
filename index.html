@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVision - Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechVision</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#profile" class="nav-link">Our Profile</a>
+                <a href="#message" class="nav-link">Message Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container">
+            <div class="welcome-box">
+                <h1 id="welcome-text">Hi Yuyu, Welcome To Website</h1>
+                <p class="subtitle">Your trusted partner in digital transformation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section profile-section">
+        <div class="container">
+            <!-- Photo Banner -->
+            <div class="photo-banner">
+                <div class="banner-content">
+                    <h2>1385-678</h2>
+                    <p>Our Headquarter</p>
+                </div>
+            </div>
+
+            <!-- Headquarter Locations -->
+            <div class="headquarter-section">
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <div class="location-icon">🏢</div>
+                        <h3>Jakarta</h3>
+                        <p>Main Office</p>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">🌆</div>
+                        <h3>Bandung</h3>
+                        <p>Creative Hub</p>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">🏭</div>
+                        <h3>Surabaya</h3>
+                        <p>Production Center</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Company -->
+            <div class="about-section">
+                <h2 class="section-title">About Our Company</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>TechVision is a leading technology company established in 2010, specializing in innovative digital solutions and cutting-edge software development. We are committed to delivering exceptional value to our clients worldwide.</p>
+                        <p>With over a decade of experience, we've successfully completed 500+ projects for clients across 15+ countries, maintaining a 98% client satisfaction rate.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Team Members</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Countries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision & Mission -->
+            <div class="vision-mission-section">
+                <div class="vm-grid">
+                    <div class="vision-card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Our Vision</h3>
+                        <p>To be the world's most innovative technology partner, transforming businesses through digital excellence and creating sustainable value for all stakeholders.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="card-icon">🚀</div>
+                        <h3>Our Mission</h3>
+                        <ul>
+                            <li>Deliver cutting-edge technology solutions</li>
+                            <li>Foster innovation and creativity</li>
+                            <li>Build lasting client relationships</li>
+                            <li>Drive digital transformation</li>
+                            <li>Ensure customer satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Us Section -->
+    <section id="message" class="section message-section">
+        <div class="container">
+            <h2 class="section-title">Message Us</h2>
+            <div class="form-container">
+                <form id="messageForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="birthDate">Tanggal Lahir</label>
+                            <input type="date" id="birthDate" name="birthDate">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="gender" value="Laki-laki">
+                                <span class="radio-custom"></span>
+                                Laki-laki
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="gender" value="Perempuan">
+                                <span class="radio-custom"></span>
+                                Perempuan
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="messageText" name="message" rows="5" placeholder="Enter your message here..." required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Submit</span>
+                        <div class="btn-loader"></div>
+                    </button>
+                </form>
+
+                <!-- Form Results -->
+                <div id="formResults" class="form-results" style="display: none;">
+                    <h3>Form Submission Details</h3>
+                    <div class="current-time">
+                        <strong>Current time:</strong> <span id="currentTime"></span>
+                    </div>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <strong>Name:</strong> <span id="resultName"></span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Email:</strong> <span id="resultEmail"></span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Phone:</strong> <span id="resultPhone"></span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Tanggal Lahir:</strong> <span id="resultBirthDate"></span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Jenis Kelamin:</strong> <span id="resultGender"></span>
+                        </div>
+                        <div class="result-item full-width">
+                            <strong>Message:</strong> <span id="resultMessage"></span>
+                        </div>
+                    </div>
+                    <button id="editForm" class="edit-btn">
+                        <span>Edit Form</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Created By Kaila</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
